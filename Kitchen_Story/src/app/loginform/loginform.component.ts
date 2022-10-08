@@ -11,7 +11,6 @@ import { User, UserLogin } from '../Models/User';
 })
 export class LoginformComponent implements OnInit {
   @ViewChild('closebutton') closebutton;
-  $: any;
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)])
